@@ -1,0 +1,118 @@
+:root {
+    font-family: "Indie Flower", sans-serif;
+    font-size: 24px;
+}
+
+body {
+    margin: 0px;
+    background-color: rgba(97, 100, 100, 0.342);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    header h1 {
+        margin-bottom: 1em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    form label {
+        padding-top: 0.4rem;
+    }
+
+    form input {
+        width: 10rem;
+        height: 1.5rem;
+        border: none;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        border-radius: 4px;
+        font-family: "Indie Flower";
+        font-size: 24px;
+        color: black;
+        padding-left: 0.6rem;
+        background-color: rgba(97, 100, 100, 0.151);
+}
+
+    form input:focus {
+        border: 2px solid black;  
+        outline: none;
+    }
+
+    form button {
+        margin-top: 0.6rem;
+        border-radius: 4px;
+        border: 2px solid black;
+        font-size: 24px;
+        font-family: "Indie Flower";
+        width: 10rem;
+        height: 1.5rem;
+        background-color: rgba(56, 54, 54, 0.397)
+    }
+
+
+main {
+    display: none;
+    margin-top: 0;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.varTurn {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.gameContainer {
+    padding: 12px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 30vw;
+    height: 60vh;
+}
+
+    .marker {
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        cursor: pointer;
+    }
+
+    .marker {
+        border-right: 4px solid black;
+        border-bottom: 4px solid black;
+      }
+      
+      .marker:nth-child(7),
+      .marker:nth-child(8),
+      .marker:nth-child(9) {
+        border-bottom: none;
+      }
+      
+      .marker:nth-child(3),
+      .marker:nth-child(6),
+      .marker:nth-child(9) {
+        border-right: none;
+      }
+      
+

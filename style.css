@@ -80,12 +80,15 @@ main {
     margin-top: 5vh;
     display: flex;
     justify-content: center;
+    font-size: 2rem;
 }
 
-@media (max-width: 500px) {
-    .gameContainer {
-        height: 300px;
-        width: 275px;
+@media (max-width: 480px) {
+    .varTurn {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
     }
 }
 
@@ -98,6 +101,13 @@ main {
     width: 400px;
     height: 400px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+    .gameContainer {
+        height: 300px;
+        width: 275px;
+    }
 }
 
     .marker {
@@ -126,4 +136,24 @@ main {
         border-right: none;
       }
       
+.restartGame, .newGame {
+    background-color: rgba(56, 54, 54, 0);
+    cursor: pointer;
+    margin-top: 0.6rem;
+    border-radius: 4px;
+    border: 2px solid black;
+    font-size: 24px;
+    margin: 20px 15px;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+    .newGame, .restartGame {
+        font-weight: 600;
+        font-family: "Indie Flower", sans-serif;
+        font-size: 16px;
+        margin: 15px 10px;
+    }
+}
 
